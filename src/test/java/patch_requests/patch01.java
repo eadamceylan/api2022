@@ -45,23 +45,6 @@ public class patch01 extends JsonPlaceHolderBaseUrl {
          response.prettyPrint();
 
 
-         // 4. step: Do Assertions
-         // 1. way:
-         response.then().assertThat().statusCode(200).body("title", equalTo(requestBodyMap.get("title")));
-
-         Map<String,Object> MapToAssertAllDetails = requestBody.expectedDataWithAllKeys(10,"Wash the dishes",true);
-         response.then().assertThat().statusCode(200).body("title",equalTo(MapToAssertAllDetails.get("title")),
-                 )
-
-
-
-
-
-
-
-
-
-
 
 
 
